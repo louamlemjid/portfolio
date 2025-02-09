@@ -9,6 +9,7 @@ import Link from "next/link";
 import About from "@/components/about";
 import { Contact } from '@/components/contact';
 import  {Welcome}  from '@/components/home';
+import { Projects } from '@/components/projects';
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       
       <Welcome />
       <About />
-
+      <Projects/>
 
       
 <Contact />
