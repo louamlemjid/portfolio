@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section id="contact" className="h-full bg-secondary  my-auto">
+    <section id="contact" className="h-screen bg-gradient-to-b from-background to-secondary">
       <div className="container text-center md:max-w-3xl lg:max-w-6xl mx-auto ml-3 px-4 pb-80 pt-60">
         <h2 className="text-6xl font-semibold mb-4">
           Contact
-          <span className="text-5xl text-background">.</span>
+          <span className="text-6xl text-background">.</span>
         </h2>
         <p className="text-lg mb-4">
           Shoot me an email if you want to connect! You can also find me on{" "}

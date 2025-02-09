@@ -38,7 +38,7 @@ export function AppSidebar() {
       className="fixed left-0 top-0 min-h-screen bg-secondary w-0"
       variants={{
         expanded: { width: "10rem" },
-        collapsed: { width: "5rem" },
+        collapsed: { width: "2rem" },
       }}
       animate={collapsed ? "collapsed" : "expanded"}
       transition={{ duration: 0.6 }}

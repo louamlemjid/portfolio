@@ -29,7 +29,7 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed left-20 top-0 w-full z-50 transition-all duration-300 ",
+        "fixed pr-10 top-0 w-full z-50 transition-all duration-300 ",
         isScrolled ? "bg-background/60 h-13 backdrop-blur-[2px] shadow-md" : "bg-transparent "
       )}
     >
