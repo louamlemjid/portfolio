@@ -10,18 +10,29 @@ import About from "@/components/about";
 import { Contact } from '@/components/contact';
 import  {Welcome}  from '@/components/home';
 import { Projects } from '@/components/projects';
-
+import { Providers } from '@/components/providers';
+import { AppSidebar } from '@/components/sidebar';
 
 export default function Home() {
   return (
     <div className="font-serif min-h-screen">
       
-      <Welcome />
-      <About />
-      <Projects/>
-
+      <Providers>
+      <div className="grid grid-cols-[5rem_auto] gap-1">
+        <div>
+          <AppSidebar /> 
+          </div>
+        <div>
+        <Welcome />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
+      </div>
       
-<Contact />
+      
+
+      </Providers>
 
     </div>
   );

@@ -35,10 +35,10 @@ export function AppSidebar() {
 
   return (
     <motion.div
-      className="fixed left-0 top-0 min-h-screen bg-secondary w-0"
+      className="fixed left-0 top-0 h-full bg-primary/70 w-0"
       variants={{
         expanded: { width: "10rem" },
-        collapsed: { width: "2rem" },
+        collapsed: { width: "5rem" },
       }}
       animate={collapsed ? "collapsed" : "expanded"}
       transition={{ duration: 0.6 }}
@@ -48,7 +48,7 @@ export function AppSidebar() {
         <div className={`hover:bg-third p-4 flex items-center  ${
           activeSection==="home" ? "bg-third" : ""
         }`} >
-          <Braces className="m-2 h-4 w-4">LL</Braces>
+          <img src="/profile.gif" alt="Logo" className="w-10 h-10 rounded-full" />
         </div>
       </motion.a>
 
