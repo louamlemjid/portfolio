@@ -57,7 +57,7 @@ export function AppSidebar() {
         {[
           { name: "About", id: "about" },
           { name: "Projects", id: "projects" },
-          { name: "Exp .", id: "experience" },
+          { name: "Exp .", id: "experiences" },
           { name: "Contact", id: "contact" },
         ].map((item, index) => (
           <motion.a

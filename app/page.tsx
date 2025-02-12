@@ -12,7 +12,7 @@ import  {Welcome}  from '@/components/home';
 import { Projects } from '@/components/projects';
 import { Providers } from '@/components/providers';
 import { AppSidebar } from '@/components/sidebar';
-
+import { Experience } from '@/components/experience';
 export default function Home() {
   return (
     <div className="font-serif min-h-screen">
@@ -26,6 +26,7 @@ export default function Home() {
         <Welcome />
         <About />
         <Projects />
+        <Experience />
         <Contact />
       </div>
       </div>
