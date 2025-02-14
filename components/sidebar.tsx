@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Braces } from "lucide-react";
 import { motion } from "framer-motion";
+// import { setTimeout } from "timers/promises";
 
 export function AppSidebar() {
   const [collapsed, setCollapsed] = useState(true);
   const [activeSection, setActiveSection] = useState("");
-
+  const [profileSwtich, setProfileSwitch] = useState(true);
   // Function to update the active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +31,11 @@ export function AppSidebar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => { 
+     setTimeout(() => {
+      setProfileSwitch(!profileSwtich);
+    }, 4000)
+  }, []);
 
   // Framer Motion variants for collapsing/expanding
 
@@ -47,8 +53,17 @@ export function AppSidebar() {
       <motion.a key="home" href="#home" className="">
         <div className={`hover:bg-third p-4 flex items-center  ${
           activeSection==="home" ? "bg-third" : ""
-        }`} >
-          <img src="/profile.gif" alt="Logo" className="w-10 h-10 rounded-full" />
+        }`} ><motion.div
+          
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+        }}
+    ><img src={profileSwtich?"/profile.png":"/profile.gif"} alt="Logo" className="w-10 h-10 rounded-full" /></motion.div>
+          
         </div>
       </motion.a>
 
