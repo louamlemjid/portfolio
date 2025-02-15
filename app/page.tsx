@@ -15,7 +15,7 @@ import { AppSidebar } from '@/components/sidebar';
 import { Experience } from '@/components/experience';
 export default function Home() {
   return (
-    <div className="font-serif min-h-screen">
+    <div className=" min-h-screen">
       
       <Providers>
       <div className="grid grid-cols-[5rem_auto] gap-1">

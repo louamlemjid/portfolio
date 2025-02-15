@@ -35,7 +35,7 @@ const experiences = [
 ]
 export function Experience() {
 return (
-        <section id="experiences" className="min-h-screen py-20 bg-secondary">
+        <section id="experiences" className="min-h-screen py-20 bg-gradient-to-b from-secondary to-background">
   <div className="container mx-auto ml-1 xs:max-w-xs md:max-w-3xl lg:max-w-6xl px-2">
   <Reveal><div className="flex gap-3 mb-8 ">
             <h1  className="w-3/6 lg:text-4xl font-bold text-2xl mb-4 text-background">Experience<span className="text-5xl text-background/30">.</span></h1>

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Youtube, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal } from "./reveal";
 
 interface ProjectCardProps {
   title: string;
@@ -26,7 +27,8 @@ export function ProjectCard({
   preview,
 }: ProjectCardProps) {
   return (
-    <Card className="bg-gradient-to-b from-secondary to-background/40 border-sky-950 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-xl">
+    <Reveal>
+      <Card className="bg-gradient-to-b from-secondary to-background/40 border-sky-950 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-xl">
       <div className="relative h-48 w-50">
         <Image
           src={image}
@@ -70,5 +72,6 @@ export function ProjectCard({
         </div>
       </div>
     </Card>
+    </Reveal>
   );
 }

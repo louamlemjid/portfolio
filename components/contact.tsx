@@ -8,7 +8,7 @@ import { Reveal } from "./reveal";
 export function Contact() {
   return (
     <section id="contact" className="h-screen bg-gradient-to-b from-background to-secondary">
-      <div className="container text-center md:max-w-3xl lg:max-w-6xl mx-auto ml-3 px-4 pb-80 pt-60">
+      <div className="container text-center md:max-w-3xl lg:max-w-6xl mx-auto ml-3 px-4 pt-60">
         <h2 className="text-6xl font-semibold mb-4">
           Contact
           <span className="text-6xl text-background">.</span>

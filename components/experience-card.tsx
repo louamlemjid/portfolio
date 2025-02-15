@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Github, Youtube, ExternalLink } from "lucide-react";
+import { Reveal } from "./reveal";
 interface ExperienceCardProps {
     company: string;
     position: string;
@@ -22,8 +23,9 @@ export function ExperienceCard({
     preview,
   }: ExperienceCardProps): JSX.Element {
     return (
-        <div className="border-sky-950 shadow-xl shadow-background/50 border-radius-6 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:shadow-third">
-            <div className="p-1">
+        <div className="border-sky-950 rounded-lg shadow-xl bg-secondary/80  shadow-secondary/50 border-radius-6 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:shadow-third/50">
+            <Reveal>
+            <div className="p-4">
                 <h3 className="text-third text-3xl font-semibold mb-2">{company}</h3>
                 <h4 className="text-third/70 text-xl font-semibold mb-2">{position}</h4>
                 <h5 className="text-third/50 text-xs font-semibold mb-2">{projectTitle}</h5>
@@ -62,6 +64,7 @@ export function ExperienceCard({
                     </Link>
                 </div>
             </div>
+            </Reveal>
         </div>
 
     )
