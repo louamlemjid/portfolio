@@ -12,8 +12,8 @@ export function Reveal({children}: {children: React.ReactNode}) {
             slideControls.start("visible");
         }
     },[isInView])
-    return (
-        <div ref={ref} style={{overflow:'hidden',width:'fit-content',position:'relative'}}
+    return (    
+        <div ref={ref} style={{overflow:'hidden',position:'relative'}}
         >
             <motion.div
         ref={ref}

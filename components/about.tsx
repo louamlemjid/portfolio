@@ -31,8 +31,8 @@ export default function About() {
                Express.js, and various databases like MongoDB and PostgreSQL, I've developed 
                a strong foundation in both frontend and backend development.
             </p> */}
-            <h2 className="text-2xl font-semibold mt-8 mb-4">A Diverse Background</h2>
-            <ul className="list-disc pl-6 mb-6 text-muted-foreground">
+            <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">A Diverse Background</h2></Reveal>
+            <Reveal><ul className="list-disc pl-6 mb-6 text-muted-foreground">
               <li>Business and Commerce : Understanding customer needs and delivering solutions drove my success in family
               business ventures (2013-2018).</li>
               <li>Device Maintenance : This experience taught me the importance of scalability, hosting machines, and hardware
@@ -40,29 +40,32 @@ export default function About() {
               <li>International Experience : As an ex-truck driver working between Dubai and Oman, I developed a global
                 perspective, honed my interpersonal skills, and discovered the power of connecting diverse cultures and
                 traditions.</li>
-            </ul>
-            <h2 className="text-2xl font-semibold mt-8 mb-4">The Code Connection</h2>
-            <p className="mb-6 sm:text-base lg:text-2xl text-muted-foreground">
+            </ul></Reveal>
+            <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">The Code Connection</h2></Reveal>
+            <Reveal><p className="mb-6 sm:text-base lg:text-2xl text-muted-foreground">
               It was through coding that I found my true calling – unlocking the potential to merge seemingly disparate fields
               and deliver innovative solutions. I now see the world as a complex software system, with every challenge an
               opportunity for creative problem-solving. My passion is to share this vision with others and collaborate on
               projects that make a meaningful difference in Tunisia and beyond.
-            </p>
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Technical Expertise</h2>
-            <ul className="list-disc pl-6 mb-6 text-muted-foreground">
+            </p></Reveal>
+            <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">Technical Expertise</h2></Reveal>
+            <Reveal><ul className="list-disc pl-6 mb-6 text-muted-foreground">
               <li>Frontend Development: React.js, React Native, Electron.js</li>
               <li>Backend Development: Node.js, Express.js</li>
               <li>Databases: MongoDB, PostgreSQL, MySQL, Firebase, Supabase</li>
               <li>Cloud Platforms: Heroku, Azure, Render, Cyclic, Vercel</li>
               <li>Other Technologies: C++, C#, ESP32, ESP8266, MQTT</li>
-            </ul>
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Professional Journey</h2>
-            <p className="mb-6 text-muted-foreground">
-              Throughout my career, I've worked on diverse projects ranging from IoT solutions (SmartX) to transportation platforms (L9ITLOUAGE) and enterprise productivity tools. Each project has enhanced my problem-solving abilities and technical skills while teaching me valuable lessons about creating user-centric solutions.
-            </p>
-            <p className="text-muted-foreground">
+            </ul></Reveal>
+            <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">Professional Journey</h2></Reveal>
+            <Reveal><p className="mb-6 text-muted-foreground">
+              Throughout my career, I've worked on diverse projects ranging from IoT solutions
+               (SmartX) to transportation platforms (L9ITLOUAGE) and enterprise productivity tools. 
+               Each project has enhanced my problem-solving abilities and technical skills while teaching me 
+               valuable lessons about creating user-centric solutions.
+            </p></Reveal>
+            <Reveal><p className="text-muted-foreground">
               I'm always eager to take on new challenges and contribute to projects that push the boundaries of what's possible with modern web technologies. If you're interested in collaboration or would like to discuss a project, feel free to reach out!
-            </p>
+            </p></Reveal>
           </div>
         
       </div>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
+import { Reveal } from "./reveal";
 
 export function Contact() {
   return (
@@ -13,34 +14,27 @@ export function Contact() {
           <span className="text-6xl text-background">.</span>
         </h2>
         <p className="text-lg mb-4">
-          Shoot me an email if you want to connect! You can also find me on{" "}
-          <Link href="https://www.linkedin.com/in/louam-lemjid-466435206/" target="_blank" className="text-primary hover:underline">
-            Linkedin
-          </Link>{" "}
-          or{" "}
-          <Link href="https://twitter.com/" target="_blank" className="text-primary hover:underline">
-            Twitter
-          </Link>{" "}
+          Shoot me an email if you want to connect!</p>
+          <Reveal><p>
+          <Link href="mailto:louam.lemjid@ensi-uma.tn" className="text-third">
+          <Button variant="ghost" size="icon" className="text-third">
+            <Mail className="h-5 w-5" />
+            
+          </Button>louam.lemjid@ensi-uma.tn
+        </Link> </p>
+        </Reveal>
+        <p> You can also find me on LinkedIn 
           if that's more your speed.
         </p>
-        <Link href="mailto:louam.lemjid@ensi-uma.tn">
-          <Button variant="ghost" size="icon">
-            <Mail className="h-5 w-5" />
-            louam.lemjid@ensi-uma.tn
-          </Button>
-        </Link>
-        <div className="flex justify-center mt-4 space-x-4">
+        
+        <Reveal><div className=" space-x-4">
           <Link href="https://www.linkedin.com/in/louam-lemjid-466435206/" target="_blank">
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="text-third">
               <Linkedin className="h-5 w-5" />
             </Button>
           </Link>
-          <Link href="https://twitter.com/" target="_blank">
-            <Button variant="ghost" size="icon">
-              <Twitter className="h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
+          
+        </div></Reveal>
       </div>
     </section>
   );

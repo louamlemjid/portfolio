@@ -46,20 +46,16 @@ export function Welcome() {
         </span> with JS eco-system.
       
     </motion.p> */}
-    <motion.p
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: -60 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+    <Reveal>
+    <p
       className="mt-6 text-center md:text-center max-w-2xl text-lg text-muted-foreground "
     >
       I've spent the last 2 years building and scaling software aiming for real-world application in Tunisia to solve major problems including :
       Transport, Home-Autmation and Agriculture. 
       
-    </motion.p>
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      animate={{ opacity: 1, y: -60 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
+    </p>
+    </Reveal>
+    <Reveal><div
       className="mt-6 flex justify-center space-x-6"
     >
       <Link href='#contact'>
@@ -67,8 +63,8 @@ export function Welcome() {
           Get in touch
         </Button>
       </Link>
-    </motion.div>
-    
+    </div>
+    </Reveal>
   </div>
 </section>
     )
