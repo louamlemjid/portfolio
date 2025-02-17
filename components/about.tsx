@@ -4,6 +4,25 @@ import { motion } from "framer-motion";
 import { Reveal } from "./reveal";
 
 export default function About() {
+  const techStack = {
+    frontend: [
+      "react.png",
+      "next.png",
+      "reactnative.png",
+      "expo.png",
+      "tailwind.png",
+      "bootstrap.png",
+    ],
+    backend: [
+      "node.png",
+      "express.png",
+      "nest.png",
+      "electron.png",
+    ],
+    databases: ["mongodb.png", "firebase.png", "supabase.png", "postgresql.png", "mysql.png"],
+    cloudPlatforms: ["heroku.png", "azure.png", "render.jpg", "cyclic.jpg", "vercel.png"],
+    otherTechnologies: ["c-plus.png", "c-sharp.png", "espressif.png"],
+  }
   return (
     <section id="about" className="min-h-screen pt-20 bg-secondary/80">
       <div className="container mx-auto ml-1 px-2 py-12 ">
@@ -50,13 +69,23 @@ export default function About() {
             </p></Reveal>
             <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">Technical Expertise</h2></Reveal>
             <Reveal><ul className="list-disc pl-6 mb-6 text-muted-foreground">
-              <li>Frontend Development: React.js, React Native, Electron.js</li>
-              <li>Backend Development: Node.js, Express.js</li>
-              <li>Databases: MongoDB, PostgreSQL, MySQL, Firebase, Supabase</li>
-              <li>Cloud Platforms: Heroku, Azure, Render, Cyclic, Vercel</li>
-              <li>Other Technologies: C++, C#, ESP32, ESP8266, MQTT</li>
+              <li>Frontend Development:<br/> {techStack.frontend.map((tech, index) => (
+                <img key={index} src={`/${tech}`} alt={`${tech}`} className="h-10 inline-block rounded-lg m-1" />
+              ))}</li>
+              <li>Backend Development: <br/>{techStack.backend.map((tech, index) => (
+                <img key={index} src={`/${tech}`} alt={`${tech}`} className="h-10 inline-block rounded-lg m-1" />
+              ))}</li>
+              <li>Databases: <br/>{techStack.databases.map((tech, index) => (
+                <img key={index} src={`/${tech}`} alt={`${tech}`} className="h-10 inline-block rounded-lg m-1" />
+              ))}</li>
+              <li>Cloud Platforms:<br/>{techStack.cloudPlatforms.map((tech, index) => (
+                <img key={index} src={`/${tech}`} alt={`${tech}`} className="h-10 inline-block rounded-lg m-1" />
+              ))}</li>
+              <li>Other Technologies:<br/>{techStack.otherTechnologies.map((tech, index) => (
+                <img key={index} src={`/${tech}`} alt={`${tech}`} className="h-10 inline-block rounded-lg m-1" />
+              ))}</li>
             </ul></Reveal>
-            <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">Professional Journey</h2></Reveal>
+            {/* <Reveal><h2 className="text-2xl font-semibold mt-8 mb-4">Professional Journey</h2></Reveal>
             <Reveal><p className="mb-6 text-muted-foreground">
               Throughout my career, I've worked on diverse projects ranging from IoT solutions
                (SmartX) to transportation platforms (L9ITLOUAGE) and enterprise productivity tools. 
@@ -65,7 +94,7 @@ export default function About() {
             </p></Reveal>
             <Reveal><p className="text-muted-foreground">
               I'm always eager to take on new challenges and contribute to projects that push the boundaries of what's possible with modern web technologies. If you're interested in collaboration or would like to discuss a project, feel free to reach out!
-            </p></Reveal>
+            </p></Reveal> */}
           </div>
         
       </div>

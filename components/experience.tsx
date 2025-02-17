@@ -7,13 +7,16 @@ const experiences = [
         position:"Full Stack Developer",
         projectTitle:"Notification On The Horizon",
         bulletPoints: [
-            "Developed a notification system for HorizonLux",
-            "Designed and implemented a notification system for HorizonLux",
-            "Developed a notification system for HorizonLux",
-            "Designed and implemented a notification system for HorizonLux",
+            `Executed a real-time notification system ahead of schedule, integrating seamlessly with existing workflows and
+              improving workplace engagement for 300+ employees.`,
+            `Achieved a 40% improvement in production time by standardizing notifications company-wide.`,
+            `Engineered a robust and user-friendly alert system using .NET Win-Form, Node.js, and React.js, increasing task
+            resolution speed by 25%.`,
+            `Enhanced awareness among employees by increasing daily logins on the corporate platform by 1,500 sessions per
+            week with a screensaver technology`
         ],
-        techStack: ["React", "Node.js", "Express", "MongoDB"],
-        github: "https://github.com",
+        techStack: ["node.png","react.png","electron.png",  "express.png", "mongodb.png","c-sharp.png","vite.png"],
+        github: "https://github.com/louamlemjid/horizon-bolt-backend.git",
         youtube: "https://youtube.com",
         preview: "https://preview.com",
     },
@@ -22,13 +25,13 @@ const experiences = [
         position:"Co-Founder & Full Stack Developer",
         projectTitle:"SmartX",
         bulletPoints: [
-            "Developed a notification system for HorizonLux",
-            "Designed and implemented a notification system for HorizonLux",
-            "Developed a notification system for HorizonLux",
-            "Designed and implemented a notification system for HorizonLux",
+            " Architected and launched web and mobile platforms to control smart home technologies, achieving a 70% reduction in rental properties’ electricity consumption",
+            "Boosted product sale success by selling more than 100 units within six months, illustrating effective marketing strategies and confirming strong consumer interest in advanced smart home technologies",
+            "Cut electricity consumption by 70% for house rental companies with a remote-controlled device for AC units.",
+            "Implemented backend services using Node.js, Express.js, JWT, and MongoDB. Integrated Firebase and IoT hard-ware (ESP8266) using C++ for real-time control and monitoring.",
         ],
-        techStack: ["React", "Node.js", "Express", "MongoDB"],
-        github: "https://github.com",
+        techStack: ["node.png", "express.png", "mongodb.png","reactnative.png","expo.png"],
+        github: "https://github.com/louamlemjid/smart-home.git",
         youtube: "https://youtube.com",
         preview: "https://preview.com",
     }

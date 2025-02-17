@@ -42,12 +42,7 @@ export function ProjectCard({
         <p className="text-muted-foreground text-xs mb-4 line-clamp-2">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {techStack.map((tech, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 text-xs rounded-full bg-secondary/60 text-muted-foreground"
-            >
-              {tech}
-            </span>
+            <img key={index} src={`/${tech}`} alt={tech} className="h-10 rounded-lg" />
           ))}
         </div>
         <div className="flex justify-between items-center">
