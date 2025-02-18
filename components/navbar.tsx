@@ -1,64 +1,43 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
+import { useState } from "react";
 import Link from "next/link";
-import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
-// import { Button } from "@material-tailwind/react";
-import {
-  Github,
-  Linkedin,
-  Facebook,
-  Youtube,
-  Mail,
-  Phone,
-} from "lucide-react";
-export function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+import { Github, Linkedin, Facebook, Youtube, Mail, Phone, ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+export function Navbar() {
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <nav
-      className={cn(
-        "fixed pr-10 top-0 w-full z-50 transition-all duration-300 ",
-        isScrolled ? "bg-background/60 h-13 backdrop-blur-[2px] shadow-md" : "bg-transparent "
-      )}
-    >
-      <div className="container mx-auto pl-16 pr-14 flex items-center justify-between h-16">
-        <div className="flex items-center justify-start h-16">
-        <Link href="https://github.com/louamlemjid" target="_blank">
+    <div className={`fixed z-20 top-1/2 right-0 transform -translate-y-1/2 transition-all duration-300 ${isOpen ? "w-16" : "w-10 "} bg-background/90 backdrop-blur-lg shadow-lg rounded-l-lg p-2`}>
+      <div className="flex flex-col items-center space-y-4">
+        {/* Collapse Button */}
+        <Button variant="link" size="icon" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
+        </Button>
+
+        {/* Social Links */}
+        {isOpen && (
+          <>
+            <Link href="https://github.com/louamlemjid" target="_blank">
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
               </Button>
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/louam-lemjid-466435206/"
-              target="_blank"
-            >
+            <Link href="https://www.linkedin.com/in/louam-lemjid-466435206/" target="_blank">
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="https://facebook.com" target="_blank">
+            <Link href="https://www.facebook.com/louen.mjid.1" target="_blank">
               <Button variant="ghost" size="icon">
                 <Facebook className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="https://youtube.com" target="_blank">
+            <Link href="https://www.youtube.com/@louamacademie5837" target="_blank">
               <Button variant="ghost" size="icon">
                 <Youtube className="h-5 w-5" />
               </Button>
             </Link>
-            <Link href="mailto:your.email@example.com">
+            <Link href="mailto:louam.lemjid@ensi-uma.tn">
               <Button variant="ghost" size="icon">
                 <Mail className="h-5 w-5" />
               </Button>
@@ -68,10 +47,14 @@ export function Navbar() {
                 <Phone className="h-5 w-5" />
               </Button>
             </Link>
-        </div>
-      
-        <Button variant="outline">My Resume</Button>
+
+            {/* Resume Download */}
+            <Button variant="outline">
+              <a download="louam_lemjid.pdf" href="https://drive.google.com/uc?export=download&id=1Wrfk5hcGx_2TLmQEMA6T1of4btyrNUDJ">CV</a>
+            </Button>
+          </>
+        )}
       </div>
-    </nav>
+    </div>
   );
 }

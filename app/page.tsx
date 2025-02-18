@@ -13,11 +13,13 @@ import { Projects } from '@/components/projects';
 import { Providers } from '@/components/providers';
 import { AppSidebar } from '@/components/sidebar';
 import { Experience } from '@/components/experience';
+import { Navbar } from '@/components/navbar';
 export default function Home() {
   return (
     <div className=" min-h-screen">
       
       <Providers>
+        <Navbar></Navbar>
       <div className="grid grid-cols-[5rem_auto] gap-1">
         <div>
           <AppSidebar /> 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion,useAnimation } from 'framer-motion'
 import { Button } from "@/components/ui/button";
-import Link from 'next/link'
+import { Link } from "react-scroll";
 import { Reveal } from './reveal';
 
 export function Welcome() {
@@ -51,14 +51,17 @@ export function Welcome() {
       className="mt-6 text-center md:text-center max-w-2xl text-lg text-muted-foreground "
     >
       I've spent the last 2 years building and scaling software aiming for real-world application in Tunisia to solve major problems including :
-      Transport, Home-Autmation and Agriculture. 
+      Transport, Home-Automation and Agriculture. 
       
     </p>
     </Reveal>
     <Reveal><div
       className="mt-6 flex justify-center space-x-6"
     >
-      <Link href='#contact'>
+      <Link to="contact"
+        smooth={true}
+        duration={1500} // Adjust the duration for smoothness
+        offset={30}>
         <Button variant="reverse" >
           Get in touch
         </Button>
