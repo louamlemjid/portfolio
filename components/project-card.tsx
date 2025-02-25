@@ -13,8 +13,8 @@ interface ProjectCardProps {
   image: string;
   techStack: string[];
   github: string;
-  youtube: string;
-  preview: string;
+  youtube?: string;
+  preview?: string;
 }
 
 export function ProjectCard({
@@ -52,18 +52,22 @@ export function ProjectCard({
                 <Github className="h-4 w-4" />
               </Button>
             </Link>
-            <Link href={youtube} target="_blank">
-              <Button variant="ghost" size="icon">
-                <Youtube className="h-4 w-4" />
-              </Button>
-            </Link>
+            {youtube && (
+              <Link href={youtube} target="_blank">
+                <Button variant="ghost" size="icon">
+                  <Youtube className="h-4 w-4" />
+                </Button>
+              </Link>
+            )}
           </div>
+          {preview && (
           <Link href={preview} target="_blank">
             <Button variant="outline" size="sm">
               <ExternalLink className="h-4 w-4 mr-2" />
               Preview
             </Button>
           </Link>
+        )}
         </div>
       </div>
     </Card>

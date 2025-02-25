@@ -24,8 +24,8 @@ export default function About() {
     otherTechnologies: ["c-plus.png", "c-sharp.png", "espressif.png"],
   }
   return (
-    <section id="about" className="min-h-screen pt-20 bg-secondary/80">
-      <div className="container mx-auto ml-1 px-2 py-12 ">
+    <section id="about" className="min-h-screen pt-20 bg-secondary/60 text-enter">
+      <div className="container mx-auto  px-2 py-12 ">
         <Reveal> 
           <div className="flex gap-3 mb-8  w-full">
             <h1  className="w-3/6 lg:text-4xl font-bold text-2xl mb-4 text-background">About Me<span className="text-5xl text-foreground">.</span></h1>

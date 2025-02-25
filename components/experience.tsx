@@ -17,8 +17,7 @@ const experiences = [
         ],
         techStack: ["node.png","react.png","electron.png",  "express.png", "mongodb.png","c-sharp.png","vite.png"],
         github: "https://github.com/louamlemjid/horizon-bolt-backend.git",
-        youtube: "https://youtube.com",
-        preview: "https://preview.com",
+        
     },
     {
         company:"RobotX",
@@ -32,14 +31,14 @@ const experiences = [
         ],
         techStack: ["node.png", "express.png", "mongodb.png","reactnative.png","expo.png"],
         github: "https://github.com/louamlemjid/smart-home.git",
-        youtube: "https://youtube.com",
-        preview: "https://preview.com",
+        youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
+        preview: "https://push-y2lq.onrender.com/",
     }
 ]
 export function Experience() {
 return (
-        <section id="experiences" className="min-h-screen py-20 bg-gradient-to-b from-secondary to-background">
-  <div className="container mx-auto ml-1 xs:max-w-xs md:max-w-3xl lg:max-w-6xl px-2">
+        <section id="experiences" className="min-h-screen py-20 bg-gradient-to-b from-secondary/70 to-background">
+  <div className="container mx-auto xs:max-w-xs md:max-w-3xl lg:max-w-6xl px-2">
   <Reveal><div className="flex gap-3 mb-8 ">
             <h1  className="w-3/6 lg:text-4xl font-bold text-2xl mb-4 text-background">Experience<span className="text-5xl text-background/30">.</span></h1>
             <hr

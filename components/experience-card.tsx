@@ -9,8 +9,8 @@ interface ExperienceCardProps {
     bulletPoints: string[];
     techStack: string[];
     github: string;
-    youtube: string;
-    preview: string;
+    youtube?: string;
+    preview?: string;
   }
 export function ExperienceCard({
     company,
@@ -23,7 +23,7 @@ export function ExperienceCard({
     preview,
   }: ExperienceCardProps): JSX.Element {
     return (
-        <div className="border-sky-950 rounded-lg shadow-xl bg-secondary/80  shadow-secondary/50 border-radius-6 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:shadow-third/50">
+        <div className="border-sky-950 rounded-lg shadow-xl bg-secondary/60  shadow-secondary/50 border-radius-6 overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-2xl hover:shadow-third/50">
             <Reveal>
             <div className="p-4">
                 <h3 className="text-third text-3xl font-semibold mb-2">{company}</h3>
@@ -46,17 +46,21 @@ export function ExperienceCard({
                                 <Github className="h-4 w-4" />
                             </Button>
                         </Link>
-                        <Link href={youtube} target="_blank">
-                            <Button variant="ghost" size="icon">
-                                <Youtube className="h-4 w-4" />
+                        {youtube && (
+                            <Link href={youtube} target="_blank">
+                                <Button variant="ghost" size="icon">
+                                    <Youtube className="h-4 w-4" />
+                                </Button>
+                            </Link>
+                        )}
+                    </div>
+                    {preview && (
+                        <Link href={preview} target="_blank">
+                            <Button variant="outline" size="sm">
+                                Preview
                             </Button>
                         </Link>
-                    </div>
-                    <Link href={preview} target="_blank">
-                        <Button variant="outline" size="sm">
-                            Preview
-                        </Button>
-                    </Link>
+                    )}
                 </div>
             </div>
             </Reveal>

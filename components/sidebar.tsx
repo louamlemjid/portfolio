@@ -54,7 +54,7 @@ export function AppSidebar() {
       to="home"
       smooth={true}
       duration={1500}
-      offset={30} // Adjust offset based on header height
+      offset={0} // Adjust offset based on header height
       className=""
     >
       <div className={`cursor-pointer p-4 flex items-center ${activeSection === "home" ? "bg-third" : ""}`}>

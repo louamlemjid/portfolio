@@ -8,8 +8,8 @@ const projects = [
       image: "Smart-X.png",
       techStack: ["html.png","reactnative.png", "mongodb.png", "firebase.png", "node.png", "express.png", "c-plus.png", "espressif.png"],
       github: "https://github.com/louamlemjid/smart-home.git",
-      youtube: "https://youtube.com",
-      preview: "https://smartx-demo.vercel.app"
+      youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
+      preview: "https://push-y2lq.onrender.com/"
     },
     {
       title: "Notification on the Horizon",
@@ -17,8 +17,7 @@ const projects = [
       image: "notification.png",
       techStack: ["html.png","electron.png", "react.png", "node.png", "express.png", "c-sharp.png", "bootstrap.png"],
       github: "https://github.com/louamlemjid/horizon-bolt-backend.git",
-      youtube: "https://youtube.com",
-      preview: "https://notification-horizon.vercel.app"
+      
     },{
       title: "L9ITLOUAGE-DESKTOP",
       description: "The desktop solution for L9ITLOUAGE, built for stations to manage their intern louage transportation services.",
@@ -26,7 +25,7 @@ const projects = [
       techStack: ["html.png","electron.png", "react.png", "mongodb.png", "bootstrap.png"],
       github: "https://github.com/louamlemjid/l9itlouage-electron-app.git",
       youtube: "https://youtu.be/cD6QMGIb-ro?si=U_wwX7ESysrYaDA4",
-      preview: "https://l9itlouage.me"
+      
     },
     {
       title: "Health Assistant Chatbot",
@@ -43,7 +42,7 @@ const projects = [
       image: "enib.png",
       techStack: ["html.png","ejs.png",  "node.png", "express.png", "bootstrap.png","mongodb.png"],
       github: "https://github.com/louamlemjid/enibconstructors.git",
-      youtube: "https://youtube.com",
+      youtube: "https://youtube.com/shorts/XCXM1MlS1fE?si=yia5WRKQ2ikWIzQD",
       preview: "https://enib-constructors-workshop.onrender.com"
     },
     {
@@ -53,13 +52,13 @@ const projects = [
       techStack: ["html.png","express.png", "ejs.png", "node.png", "electron.png", "react.png"],
       github: "https://github.com/louamlemjid/louage-beta.git",
       youtube: "https://youtu.be/dx9Lv_9-9qI?si=dnn5RzQnmh6dkusm",
-      preview: "https://l9itlouage.me"
+      preview: "https://l9itlouage-beta.onrender.com/"
     }
   ];
 export function Projects (){
     return (
         <section id="projects" className="min-h-screen py-20 bg-secondary/80">
-  <div className="container mx-auto ml-1 xs:max-w-xs md:max-w-3xl lg:max-w-6xl px-2">
+  <div className="container mx-auto xs:max-w-xs md:max-w-3xl lg:max-w-6xl px-2">
   <Reveal><div className="flex gap-3 mb-8 ">
             <h1  className="w-3/6 lg:text-4xl font-bold text-2xl mb-4 text-background">My Work<span className="text-5xl text-foreground">.</span></h1>
             <hr

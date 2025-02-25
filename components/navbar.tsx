@@ -49,9 +49,9 @@ export function Navbar() {
             </Link>
 
             {/* Resume Download */}
-            <Button variant="outline">
+            {/* <Button variant="outline">
               <a download="louam_lemjid.pdf" href="https://drive.google.com/uc?export=download&id=1Wrfk5hcGx_2TLmQEMA6T1of4btyrNUDJ">CV</a>
-            </Button>
+            </Button> */}
           </>
         )}
       </div>
