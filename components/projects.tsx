@@ -3,14 +3,50 @@ import { ProjectCarousel } from "@/components/project-carousel";
 import { Reveal } from "./reveal";
 const projects = [
     {
-      title: "SmartX",
-      description: "Turn your smartphone into a powerful remote for your home with the SmartX Mobile App. Manage your ACs, TVs, lights, cameras, and more – all from one app, no matter where you are.",
-      image: "Smart-X.png",
-      techStack: ["html.png","reactnative.png", "mongodb.png", "firebase.png", "node.png", "express.png", "c-plus.png", "espressif.png"],
-      github: "https://github.com/louamlemjid/smart-home.git",
-      youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
-      preview: "https://push-y2lq.onrender.com/"
-    },
+  title: "SmartX",
+  description: "Turn your smartphone into a powerful remote for your home with the SmartX Mobile App. Manage your ACs, TVs, lights, cameras, and more – all from one app, no matter where you are.",
+  image: "Smart-X.png",
+  techStack: ["html.png","reactnative.png", "mongodb.png", "firebase.png", "node.png", "express.png", "c-plus.png", "espressif.png"],
+  github: "https://github.com/louamlemjid/smart-home.git",
+  youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
+  preview: "https://push-y2lq.onrender.com/"
+},
+{
+  title: "RobotX Website",
+  description: "A modern and interactive website for RobotX Club, showcasing projects and achievements using 3D effects and animations.",
+  image: "robotx-website.png",
+  techStack: ["next.png","three.png","mongodb.png"],
+  github: "",
+  youtube: "",
+  preview: "https://robotxwebsite3.vercel.app/"
+},
+{
+  title: "Asma Smart Home",
+  description: "A smart home management platform that allows users to monitor and control home devices remotely with real-time updates.",
+  image: "asma-smart-home.png",
+  techStack: ["next.png","firebase.png"],
+  github: "",
+  youtube: "",
+  preview: "https://asma-smart-home.vercel.app/"
+},
+{
+  title: "Securicar - Visite Technique",
+  description: "A web platform optimized for SEO to help users book and manage their car technical inspection appointments.",
+  image: "securicar.png",
+  techStack: ["next.png","mongodb.png"],
+  github: "",
+  youtube: "",
+  preview: "https://visite-technique-ruddy.vercel.app/"
+},
+{
+  title: "RobotX Mobile App",
+  description: "A cross-platform mobile application for RobotX Club, enabling users to control IoT devices and manage smart systems on the go.",
+  image: "robotx-mobile.png",
+  techStack: ["reactnative.png","firebase.png","githubactions.png"],
+  github: "",
+  youtube: "",
+  preview: ""
+},
     {
       title: "Notification on the Horizon",
       description: "A notification system to improve employee productivity inside the company using Windows notification, screensaver as the dashboard of the web app, and auto-launch of Chrome.",
