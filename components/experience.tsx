@@ -31,18 +31,6 @@ const experiences = [
         preview: "https://push-y2lq.onrender.com/",
     },
     {
-        company:"Eagle Projects Tunisia",
-        position:"AI & Robotics Intern",
-        projectTitle:"Humanoid Hand Reinforcement Learning",
-        bulletPoints: [
-            "Developed reinforcement learning models for humanoid hand manipulation tasks including reaching, grasping, and lifting.",
-            "Used MuJoCo physics simulator to train and evaluate robotic hand control strategies.",
-            "Implemented Stable-Baselines3 algorithms in Python to improve control accuracy and stability."
-        ],
-        techStack: ["Python.png","banner.svg","Numpy.png"],
-        github: "",
-    },
-    {
         company:"Robocare",
         position:"IoT & Embedded Systems Intern",
         projectTitle:"Assistive Robotics & Smart Healthcare Solutions",
@@ -52,6 +40,18 @@ const experiences = [
             "Collaborated with a multidisciplinary team to prototype assistive robotics technologies."
         ],
         techStack: ["Python.png","JSON.png"],
+        github: "",
+    },
+    {
+        company:"Eagle Projects Tunisia",
+        position:"AI & Robotics Intern",
+        projectTitle:"Humanoid Hand Reinforcement Learning",
+        bulletPoints: [
+            "Developed reinforcement learning models for humanoid hand manipulation tasks including reaching, grasping, and lifting.",
+            "Used MuJoCo physics simulator to train and evaluate robotic hand control strategies.",
+            "Implemented Stable-Baselines3 algorithms in Python to improve control accuracy and stability."
+        ],
+        techStack: ["Python.png","banner.svg","NumPy.png"],
         github: "",
     }
 ]
