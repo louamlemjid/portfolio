@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://louam-lemjid.vercel.app/
+Host: https://louam-lemjid.vercel.app
 
 # Sitemaps
 Sitemap: https://louam-lemjid.vercel.app/sitemap.xml
