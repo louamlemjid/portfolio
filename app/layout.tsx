@@ -14,6 +14,9 @@ export const metadata = {
     "Electron.js",
   ],
   authors: [{ name: "Louam Lemjid" }],
+  verification: {
+    google: '4rVBEIEauBbk_S-bDqsPZtXcw2UAfoWMuvuMm3R8LLM'
+  },
   openGraph: {
     title: "Louam Lemjid - Fullstack Engineer",
     description:
