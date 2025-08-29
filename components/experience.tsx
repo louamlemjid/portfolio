@@ -2,37 +2,57 @@ import { ExperienceCard } from "./experience-card";
 import { Reveal } from "./reveal";
 
 const experiences = [
-    {
+        {
         company:"HorizonLux",
         position:"Full Stack Developer",
         projectTitle:"Notification On The Horizon",
         bulletPoints: [
-            `Executed a real-time notification system ahead of schedule, integrating seamlessly with existing workflows and
-              improving workplace engagement for 300+ employees.`,
-            `Achieved a 40% improvement in production time by standardizing notifications company-wide.`,
-            `Engineered a robust and user-friendly alert system using .NET Win-Form, Node.js, and React.js, increasing task
-            resolution speed by 25%.`,
-            `Enhanced awareness among employees by increasing daily logins on the corporate platform by 1,500 sessions per
-            week with a screensaver technology`
+            "Executed a real-time notification system ahead of schedule, integrating seamlessly with existing workflows and improving workplace engagement for 300+ employees.",
+            "Achieved a 40% improvement in production time by standardizing notifications company-wide.",
+            "Engineered a robust and user-friendly alert system using .NET Win-Form, Node.js, and React.js, increasing task resolution speed by 25%.",
+            "Enhanced awareness among employees by increasing daily logins on the corporate platform by 1,500 sessions per week with a screensaver technology."
         ],
-        techStack: ["node.png","react.png","electron.png",  "express.png", "mongodb.png","c-sharp.png","vite.png"],
+        techStack: ["node.png","react.png","electron.png","express.png","mongodb.png","c-sharp.png","vite.png"],
         github: "https://github.com/louamlemjid/horizon-bolt-backend.git",
-        
     },
     {
         company:"RobotX",
         position:"Co-Founder & Full Stack Developer",
         projectTitle:"SmartX",
         bulletPoints: [
-            " Architected and launched web and mobile platforms to control smart home technologies, achieving a 70% reduction in rental properties’ electricity consumption",
-            "Boosted product sale success by selling more than 100 units within six months, illustrating effective marketing strategies and confirming strong consumer interest in advanced smart home technologies",
+            "Architected and launched web and mobile platforms to control smart home technologies, achieving a 70% reduction in rental properties’ electricity consumption.",
+            "Boosted product sale success by selling more than 100 units within six months, illustrating effective marketing strategies and confirming strong consumer interest in advanced smart home technologies.",
             "Cut electricity consumption by 70% for house rental companies with a remote-controlled device for AC units.",
-            "Implemented backend services using Node.js, Express.js, JWT, and MongoDB. Integrated Firebase and IoT hard-ware (ESP8266) using C++ for real-time control and monitoring.",
+            "Implemented backend services using Node.js, Express.js, JWT, and MongoDB. Integrated Firebase and IoT hardware (ESP8266) using C++ for real-time control and monitoring."
         ],
-        techStack: ["node.png", "express.png", "mongodb.png","reactnative.png","expo.png"],
+        techStack: ["node.png","express.png","mongodb.png","reactnative.png","expo.png","firebase.png","c-plus.png","espressif.png"],
         github: "https://github.com/louamlemjid/smart-home.git",
         youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
         preview: "https://push-y2lq.onrender.com/",
+    },
+    {
+        company:"Eagle Projects Tunisia",
+        position:"AI & Robotics Intern",
+        projectTitle:"Humanoid Hand Reinforcement Learning",
+        bulletPoints: [
+            "Developed reinforcement learning models for humanoid hand manipulation tasks including reaching, grasping, and lifting.",
+            "Used MuJoCo physics simulator to train and evaluate robotic hand control strategies.",
+            "Implemented Stable-Baselines3 algorithms in Python to improve control accuracy and stability."
+        ],
+        techStack: ["Python.png","banner.svg","Numpy.png"],
+        github: "",
+    },
+    {
+        company:"Robocare",
+        position:"IoT & Embedded Systems Intern",
+        projectTitle:"Assistive Robotics & Smart Healthcare Solutions",
+        bulletPoints: [
+            "Contributed to the development of IoT-based healthcare solutions for patient monitoring and assistance.",
+            "Integrated embedded systems with cloud platforms to enable real-time data tracking and remote management.",
+            "Collaborated with a multidisciplinary team to prototype assistive robotics technologies."
+        ],
+        techStack: ["Python.png","JSON.png"],
+        github: "",
     }
 ]
 export function Experience() {

@@ -1,25 +1,55 @@
+// app/layout.tsx
 export const metadata = {
-  title: 'Louam Lemjid - Software Engineer',
-  description: 'Portfolio of Louam Lemjid, a Fullstack engineer specializing in web, mobile, and IoT development.',
-  keywords: 'Louam Lemjid, Software Engineer, Web Development, IoT, React, Node.js, Next.js, Electron.js',
-  authors: [{ name: 'Louam Lemjid'}],
+  title: "Louam Lemjid - Fullstack Engineer",
+  description:
+    "Welcome to the official website of Louam Lemjid, a Fullstack engineer specializing in web, mobile, and IoT development.",
+  keywords: [
+    "Louam Lemjid",
+    "Fullstack Engineer",
+    "Web Development",
+    "IoT",
+    "React",
+    "Node.js",
+    "Next.js",
+    "Electron.js",
+  ],
+  authors: [{ name: "Louam Lemjid" }],
   openGraph: {
-    title: 'Louam Lemjid - Software Engineer',
-    description: 'Explore the work of Louam Lemjid, an expert in web, mobile, and IoT development.',
-    // url: 'https://yourdomain.com',
-    siteName: 'Louam Lemjid Portfolio',
+    title: "Louam Lemjid - Fullstack Engineer",
+    description:
+      "Explore the work of Louam Lemjid, an expert in web, mobile, and IoT development.",
+    url: "https://yourdomain.com", // 👉 replace with your real domain
+    siteName: "Louam Lemjid",
     images: [
       {
-        url: '/profile.png',
+        url: "/profile.png", // must resolve to /public/profile.png
         width: 1200,
         height: 630,
-        alt: 'Louam Lemjid',
+        alt: "Louam Lemjid Profile",
       },
     ],
-    type: 'website',
+    type: "website",
   },
- 
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  // JSON-LD structured data
+  other: {
+    "ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Louam Lemjid",
+      jobTitle: "Fullstack Engineer",
+      url: "https://yourdomain.com", // 👉 replace with real domain
+      sameAs: [
+        "https://www.linkedin.com/in/louam-lemjid-466435206/",
+        "https://github.com/louamlemjid",
+      ],
+    }),
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
