@@ -18,11 +18,11 @@ export const metadata = {
     title: "Louam Lemjid - Fullstack Engineer",
     description:
       "Explore the work of Louam Lemjid, an expert in web, mobile, and IoT development.",
-    url: "https://yourdomain.com", // 👉 replace with your real domain
+    url: "https://louam-lemjid.vercel.app", // 👉 replace with your real domain
     siteName: "Louam Lemjid",
     images: [
       {
-        url: "/profile.png", // must resolve to /public/profile.png
+        url: "https://louam-lemjid.vercel.app/profile.png", // must resolve to /public/profile.png
         width: 1200,
         height: 630,
         alt: "Louam Lemjid Profile",
