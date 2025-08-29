@@ -1,9 +1,7 @@
-# *
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
-# Host
-Host: https://louam-lemjid.vercel.app
-
-# Sitemaps
+# Sitemap location
 Sitemap: https://louam-lemjid.vercel.app/sitemap.xml
+Sitemap: https://louam-lemjid.vercel.app/sitemap_copy.xml
