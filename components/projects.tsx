@@ -1,12 +1,22 @@
 import { ProjectCard } from "@/components/project-card";
 import { ProjectCarousel } from "@/components/project-carousel";
 import { Reveal } from "./reveal";
+import { Youtube } from "lucide-react";
 const projects = [
+    {
+      title: "RobotX",
+      description: "RobotX is a management system for RobotX club at Kelibia. It allows the club to manage its members, events, and activities.",
+      image: "robotx.png",
+      techStack: ["reactnative.png", "expo.png", "firebase.png", "githubActions.png"],
+      youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
+      github:"",
+      peview:""
+    },
     {
       title: "SmartX",
       description: "Turn your smartphone into a powerful remote for your home with the SmartX Mobile App. Manage your ACs, TVs, lights, cameras, and more – all from one app, no matter where you are.",
       image: "Smart-X.png",
-      techStack: ["html.png","reactnative.png", "mongodb.png", "firebase.png", "node.png", "express.png", "c-plus.png", "espressif.png"],
+      techStack: ["html.png","reactnative.png","expo.png", "mongodb.png", "firebase.png", "node.png", "express.png", "c-plus.png", "espressif.png"],
       github: "https://github.com/louamlemjid/smart-home.git",
       youtube: "https://youtube.com/shorts/ZAD5bm67ZEo?si=j6RNWVa9XUeck_o6",
       preview: "https://push-y2lq.onrender.com/"
@@ -17,6 +27,8 @@ const projects = [
       image: "notification.png",
       techStack: ["html.png","electron.png", "react.png", "node.png", "express.png", "c-sharp.png", "bootstrap.png"],
       github: "https://github.com/louamlemjid/horizon-bolt-backend.git",
+      peview:"",
+      youtube:""
       
     },{
       title: "L9ITLOUAGE-DESKTOP",
@@ -25,6 +37,7 @@ const projects = [
       techStack: ["html.png","electron.png", "react.png", "mongodb.png", "bootstrap.png"],
       github: "https://github.com/louamlemjid/l9itlouage-electron-app.git",
       youtube: "https://youtu.be/cD6QMGIb-ro?si=U_wwX7ESysrYaDA4",
+      peview:""
       
     },
     {
