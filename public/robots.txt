@@ -3,5 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://louam-lemjid.vercel.app/sitemap.xml
-Sitemap: https://louam-lemjid.vercel.app/sitemap_copy.xml
+Sitemap: https://louam-lemjid.vercel.app/sitemap_copy2.xml
