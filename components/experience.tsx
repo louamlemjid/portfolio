@@ -17,7 +17,7 @@ const experiences = [
     },
     {
         company:"RobotX",
-        position:"Co-Founder & Full Stack Developer",
+        position:"Co-Founder & Software Engineer",
         projectTitle:"SmartX",
         bulletPoints: [
             "Architected and launched web and mobile platforms to control smart home technologies, achieving a 70% reduction in rental properties’ electricity consumption.",
@@ -32,12 +32,11 @@ const experiences = [
     },
     {
         company:"Robocare",
-        position:"IoT & Embedded Systems Intern",
-        projectTitle:"Assistive Robotics & Smart Healthcare Solutions",
+        position:"Data Science Intern",
+        projectTitle:"Collect and prepare Savera Tomato dataset",
         bulletPoints: [
-            "Contributed to the development of IoT-based healthcare solutions for patient monitoring and assistance.",
-            "Integrated embedded systems with cloud platforms to enable real-time data tracking and remote management.",
-            "Collaborated with a multidisciplinary team to prototype assistive robotics technologies."
+            "Cleaning and annotating plant data using JSON and web tools, improving dataset quality by 40% for disease detection model training.",
+	"Implemented data collection workflows with Python and GitHub, automating image processing and reducing manual effort by 30%."
         ],
         techStack: ["Python.png","JSON.png"],
         github: "",
